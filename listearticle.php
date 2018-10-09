@@ -14,4 +14,19 @@ $content = $_POST['contenu'];
 $sql = "INSERT INTO article (titre, contenu, auteur) VALUES ('$titre', '$content', '$auteur')";
 $rowadd = $pdo->exec($sql);
 
-echo $sql;
+?>
+
+<html>
+<body>
+<h1>
+    <?php
+        echo $titre;
+    ?>
+</h1> <br>
+<h2>
+    <?php
+        echo $auteur;
+    ?>
+</h2>
+</body>
+</html>
